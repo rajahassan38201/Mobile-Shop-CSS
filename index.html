@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raja Mobile</title>
+    <style>
+        *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:Arial;
+
+}
+body{
+    background: linear-gradient(320deg,#eb92be,#ffef72,#63c9b4);
+}
+nav{
+    position: fixed;
+    width: 100vw;
+    height: 90px;
+    background:linear-gradient(to right,#f448b3,#3f5efb);
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+
+
+}
+#logo{
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    background-image: url("images/logo.jpg");
+    background-size: cover;
+}
+ul li{
+    display: inline;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    margin-left: 35px;
+    transition: all 1s ;
+}
+ul li a:hover{
+    border-radius: 20px;
+    padding: 16px;
+    background-color: #f448b3;
+    font-size:22px;
+    border: 5px solid #3f5efb;
+}
+#btn{
+    border-radius: 20px;
+    padding: 16px;
+    background-color: #f448b3;
+}
+#btn:hover{
+    background-color: aqua;
+}
+#banner{
+    width:1300px;
+    height:600px;
+    background-image: url(images/bnr.jpg);
+    background-size: cover;
+}
+.space{
+    height: 80px;
+}
+h1{
+    text-align: center;
+    color: #3f5efb;
+    margin-top: 30px;
+}
+
+.samsung{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.box{
+    height: 500px;
+    width: 400px;
+    margin-bottom: 20px;
+    /* background-color: white; */
+    transition: all 1s;
+}
+.box:hover{
+    border:5px solid #3f5efb;
+}
+
+#box1{
+    background-image: url(images/Samsung/S23\ ultra.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#box2{
+    background-image: url(images/Samsung/S22\ Ultra.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#box3{
+    background-image: url(images/Samsung/s23.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#box4{
+    background-image: url(images/Samsung/S22.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#box5{
+    background-image: url(images/Samsung/A23.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#box6{
+    background-image: url(images/Samsung/S21.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#box1i{
+    background-image: url(images/iphone/pngimg.com\ -\ iphone_11_PNG36.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#box2i{
+    background-image: url(images/iphone/15.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#box3i{
+    background-image: url(images/iphone/iphone-x-pictures-45229.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#box4i{
+    background-image: url(images/iphone/iphone-x-pictures-45219.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#box5i{
+    background-image: url(images/iphone/14.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#box6i{
+    background-image: url(images/iphone/11.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#box1v{
+    background-image: url(images/vivo/v1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#box2v{
+    background-image: url(images/vivo/v2.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#box3v{
+    background-image: url(images/vivo/v3.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#box4v{
+    background-image: url(images/vivo/v4.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#box5v{
+    background-image: url(images/vivo/v5.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#box6v{
+    background-image: url(images/vivo/v6.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#box1o{
+    background-image: url(images/oneplus/1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#box2o{
+    background-image: url(images/oneplus/2.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#box3o{
+    background-image: url(images/oneplus/3.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#box4o{
+    background-image: url(images/oneplus/4.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#box5o{
+    background-image: url(images/oneplus/5.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#box6o{
+    background-image: url(images/oneplus/6.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.ft{
+    height: 100px;
+    background:linear-gradient(to right,#f448b3,#3f5efb);
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    font-size: 25px;
+}
+.ft:hover{
+    border: 5px solid #3f5efb;
+}
+.ft ul li{
+    margin-left: 35px;
+    color: white;
+}
+
+button{
+    border-radius: 15px;
+    padding: 8px;
+    background-color: #f448b3;
+    color: white;
+    font-size: 15px;
+}
+button:hover{
+    background-color: #3f5efb;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header id="home">
+            <nav>
+                <div id="logo"></div>
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#samsung">SAMSUNG</a></li>
+                    <li><a href="#iphone">IPHONE</a></li>
+                    <li><a href="#vivo">VIVO</a></li>
+                    <li><a href="#oneplus">ONE PLUS</a></li>
+                    <li><a href="#contact">CONTACT US</a></li>
+                    <li><a href="index.html" id="btn">Login & Sign up</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <div id="banner"></div>
+            </section>
+            <br>
+            <div class="space" id="samsung"></div>
+            <h1>Samsung Galaxy</h1>
+            <section class="samsung">
+                <div class="box" id="box1"><button>Buy Now</button></div>
+                <div class="box" id="box2"><button>Buy Now</button></div>
+                <div class="box" id="box3"><button>Buy Now</button></div>
+                <div class="box" id="box4"><button>Buy Now</button></div>
+                <div class="box" id="box5"><button>Buy Now</button></div>
+                <div class="box" id="box6"><button>Buy Now</button></div>
+
+            </section>
+            <br>
+            <div class="space" id="iphone"></div>
+            <h1>iPhone</h1>
+            <section class="samsung">
+                <div class="box" id="box1i"><button>Buy Now</button></div>
+                <div class="box" id="box2i"><button>Buy Now</button></div>
+                <div class="box" id="box3i"><button>Buy Now</button></div>
+                <div class="box" id="box4i"><button>Buy Now</button></div>
+                <div class="box" id="box5i"><button>Buy Now</button></div>
+                <div class="box" id="box6i"><button>Buy Now</button></div>
+
+            </section>
+            <br>
+            <div class="space" id="vivo"></div>
+            <h1>vivo</h1>
+            <section class="samsung">
+                <div class="box" id="box1v"><button>Buy Now</button></div>
+                <div class="box" id="box2v"><button>Buy Now</button></div>
+                <div class="box" id="box3v"><button>Buy Now</button></div>
+                <div class="box" id="box4v"><button>Buy Now</button></div>
+                <div class="box" id="box5v"><button>Buy Now</button></div>
+                <div class="box" id="box6v"><button>Buy Now</button></div>
+
+            </section>
+            <br>
+            <div class="space" id="oneplus"></div>
+            <h1>oneplus</h1>
+            <section class="samsung">
+                <div class="box" id="box1o"><button>Buy Now</button></div>
+                <div class="box" id="box2o"><button>Buy Now</button></div>
+                <div class="box" id="box3o"><button>Buy Now</button></div>
+                <div class="box" id="box4o"><button>Buy Now</button></div>
+                <div class="box" id="box5o"><button>Buy Now</button></div>
+                <div class="box" id="box6o"><button>Buy Now</button></div>
+
+            </section>
+        </main>
+        <footer>
+            <div class="ft" id="contact">
+                <ul>
+                    <li>Mobile #: 0302-3536363</li>
+                    <li>Mobile #: 0316-6700058</li>
+                    <li>Email: rajahassan38201@gmail.com</li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    
+</body>
+</html>
